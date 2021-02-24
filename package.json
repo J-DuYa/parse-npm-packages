@@ -1,0 +1,45 @@
+{
+  "name": "parse-npm-packages",
+  "description": "用于解析 npm 包的信息",
+  "authors": "duya",
+  "version": "1.0.1",
+  "scripts": {
+    "test": "jasmine test/**/*spec.js --reporter=jasmine-console-reporter"
+  },
+  "keywords": [
+    "tgz",
+    "npm",
+    "package.json",
+    "package-lock",
+		"registry",
+		"duya"
+  ],
+  "dependencies": {
+    "colors": "^1.3.0",
+    "commander": "^2.16.0",
+    "mkdirp": "^0.5.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "semver": "^5.5.0",
+    "tar": "^4.4.6"
+  },
+  "main": "lib/downloader.js",
+  "bin": {
+    "package-tarball-tgz": "bin/download-tgz"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/J-DuYa/parse-npm-packages"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^2.8.9",
+    "jasmine": "^3.2.0",
+    "jasmine-console-reporter": "^3.1.0",
+    "rimraf": "^2.6.2"
+  }
+}
